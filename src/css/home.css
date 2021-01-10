@@ -1,0 +1,139 @@
+/*인기 게시물 컨테이너*/
+.bestPost {
+  display: flex;
+  flex-direction: column;
+  width: 62.5rem;
+  height: 31.25rem;
+  background-color: #ffffff;
+  margin-right: 9.375rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*포스터 컨테이너*/
+.postContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*포스터 이미지*/
+.postImg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30.625rem;
+  height: 15.313rem;
+  margin: 0 3.125rem 5rem 3.125rem;
+  background-color: #6b6b6b;
+}
+
+/*해당 포스터 컨테이너*/
+.postContent {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3.125rem 5rem 2rem;
+  width: 15.625rem;
+  height: 15.313rem;
+}
+
+/*해당 포스터의 제목*/
+.postTitle {
+  font-size: 38pt;
+  margin-bottom: 2.5rem;
+}
+/*포스터의 간략적인 내용*/
+.postSubCopy {
+  width: 16.125rem;
+  height: 10rem;
+  font-size: 10pt;
+  white-space: normal;
+  overflow: hidden;
+}
+/*포스터 인덱스*/
+.postIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*인덱스 엘리먼트*/
+.indexElement {
+  background-color: #6b6b6b;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  margin: 0 0.3rem;
+}
+/*선택된 엘리먼트*/
+.indexElement.indexOn {
+  background-color: #b5182f;
+}
+
+/*넘기기 버튼*/
+.nextToggle {
+  flex: none;
+  background-image: url("../images/allow.svg");
+  width: 1.6rem;
+  height: 2.6rem;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: 2.25rem;
+  cursor: pointer;
+}
+
+/*댓글 목록 컨테이너*/
+.commentList {
+  display: flex;
+  flex-direction: column;
+  width: 28.125rem;
+  height: 31.25rem;
+  background-color: #ffffff;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.commentList ul {
+  margin-left: 5.625rem;
+  margin-right: 5.625rem;
+  white-space: nowrap;
+  overflow-y: scroll;
+}
+
+.commentList ul::-webkit-scrollbar {
+  display: none;
+}
+
+.commentList li {
+  cursor: pointer;
+}
+
+.commentContentTitle {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.commentContent {
+  height: 1.875rem;
+  overflow: hidden;
+}
+.elapsedTime {
+  margin-top: 0.813rem;
+  color: #8e8e8e;
+}
+
+.postFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.postList {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+.postList::-webkit-scrollbar {
+  display: none;
+}

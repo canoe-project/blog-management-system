@@ -1,0 +1,191 @@
+/*전체화면 flex box 적용*/
+.wrapper {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: none;
+}
+
+/*네비게이터 스타일*/
+.navigate {
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex: none;
+  height: 5rem;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(59, 59, 59, 0.5);
+  z-index: 1;
+  align-items: center;
+}
+/*기능성 버튼 컨테이너*/
+.functionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: none;
+  justify-content: center;
+}
+.funcIcon {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 3rem;
+  font-size: 18pt;
+  vertical-align: middle;
+  align-items: center;
+  flex: none;
+}
+
+.home {
+  flex: none;
+  width: 5rem;
+  height: 5rem;
+  background-color: #000000;
+  cursor: pointer;
+}
+.home::before {
+  position: absolute;
+  width: 1.875rem;
+  height: 1.875rem;
+  top: 1.5rem;
+  left: 1.5rem;
+  content: "";
+  background-image: url("../images/house.svg");
+  background-repeat: no-repeat;
+  flex: none;
+  cursor: pointer;
+}
+.newPost::before {
+  content: "";
+  display: inline-block;
+  flex: none;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-image: url("../images/newPostIcon.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.list::before {
+  content: "";
+  display: inline-block;
+  flex: auto;
+  width: 3.125rem;
+  height: 1.313rem;
+  background-image: url("../images/listIcon.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.statistics::before {
+  content: "";
+  display: inline-block;
+  flex: auto;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-image: url("../images/statisticsIcon.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+/*커뮤니티 버튼 컨테이너*/
+.communityContaoner {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+.search {
+  background-image: url("../images/seatchIcon.svg");
+  background-repeat: no-repeat;
+  width: 2.5rem;
+  height: 2.5rem;
+  vertical-align: middle;
+  flex: none;
+  cursor: pointer;
+}
+.comment {
+  background-image: url("../images/commentIcon.svg");
+  background-repeat: no-repeat;
+  width: 2.5rem;
+  height: 2.5rem;
+  vertical-align: middle;
+  margin: auto 2rem;
+  flex: none;
+  cursor: pointer;
+}
+
+/*컨텐츠 섹션 스타일*/
+.content {
+  display: flex;
+  flex: auto;
+  height: 100%;
+  background-color: #e0e0e0;
+  justify-content: center;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/*best post 카피*/
+.headCopy {
+  position: relative;
+  color: #b5182f;
+  font-size: 24pt;
+  font-weight: bold;
+  top: 2.5rem;
+  left: 3.125rem;
+  margin-bottom: 5rem;
+}
+
+.funcOn {
+  color: #b5182f;
+}
+
+.home.funcOn {
+  background-color: #b5182f;
+}
+
+.newPost.funcOn::before {
+  background-image: url("../images/newPostIcon-red.svg");
+}
+
+.list.funcOn::before {
+  background-image: url("../images/listIcon-red.svg");
+}
+
+.statistics.funcOn::before {
+  background-image: url("../images/statisticsIcon-red.svg");
+}
+
+.newPost {
+  padding: 1.4rem 0;
+  cursor: pointer;
+}
+.list {
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+.statistics {
+  padding: 1.4rem 0;
+  cursor: pointer;
+}
+.newPost.funcOn {
+  border-bottom: 5px solid #b5182f;
+  border-top: 5px solid #ffffff;
+}
+.list.funcOn {
+  border-bottom: 5px solid #b5182f;
+  border-top: 5px solid #ffffff;
+}
+.statistics.funcOn {
+  border-bottom: 5px solid #b5182f;
+  border-top: 5px solid #ffffff;
+}

@@ -1,0 +1,47 @@
+.listContainer {
+  width: calc(100% - 20rem);
+  height: 100%;
+  background-color: #ffffff;
+  margin-top: 10rem;
+  padding: 5rem;
+}
+.funcButtonContainer {
+  display: flex;
+  flex-direction: row;
+}
+.listSortButton {
+  width: 2.25rem;
+  height: 2rem;
+  background: url("../images/listSortIcon.svg");
+  margin: 0 2.5rem 0 auto;
+}
+.listViewButton {
+  width: 2.125rem;
+  height: 2.125rem;
+  background-image: url("../images/gridViewIcon.svg");
+}
+.documentListContainer {
+  padding: 2.25rem;
+}
+.listHead {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 24pt;
+  margin-bottom: 2rem;
+}
+
+.listHead > div:nth-child(2) {
+  margin-left: auto;
+}
+.documentList {
+  font-size: 16pt;
+}
+.document {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.document > span:nth-child(2) {
+  margin-left: auto;
+}

@@ -7,7 +7,7 @@ const $selectorItem = $(".selectorItem");
 
 let editorDoc; //에디터 인스턴스 저장 필드
 
-// const domain = "localhost:3000";
+const domain = "localhost:3000";
 
 $(() => {
   DecoupledEditor.create(document.querySelector("#editor"))

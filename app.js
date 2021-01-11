@@ -15,7 +15,7 @@ function createWindow() {
     nodeIntegration: false,
   });
   // win.setMenuBarVisibility(false);
-  win.loadFile("./dist/main.html");
+  win.loadFile("./dist/index.html");
 }
 
 app.whenReady().then(createWindow);

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
-    <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/decoupled-document/ckeditor.js"></script>
+    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/decoupled-document/ckeditor.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 </head>
@@ -13,7 +13,7 @@
     <div class="wrapper">
         <div class="navigate">
             <div class="functionContainer">
-                <div class="home funcOn"></div>
+                <div class="home funcIcon funcOn"></div>
                 <div class="newPost funcIcon">New Post</div>
                 <div class="list funcIcon">List</div>
                 <div class="statistics funcIcon">Statistics</div>
@@ -23,8 +23,17 @@
                 <div class="comment"></div>
             </div>            
         </div>
-        <div class="content">
-            
+        <div class="homeContent subPage">
+            <% include ../html/home.html %>
+        </div>
+        <div class="newPostContent subPage">
+            <% include ../html/newPost.html %>
+        </div>
+        <div class="listContent subPage">
+            <% include ../html/list.html %>
+        </div>
+        <div class="statisticsContent subPage">
+            <%# include ../html/statistics.html %>
         </div>
     </div>
 </body>

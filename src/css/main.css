@@ -38,6 +38,9 @@
   flex: none;
 }
 
+.home.funcIcon {
+  margin-left: 0;
+}
 .home {
   flex: none;
   width: 5rem;
@@ -123,17 +126,6 @@
   cursor: pointer;
 }
 
-/*컨텐츠 섹션 스타일*/
-.content {
-  display: flex;
-  flex: auto;
-  height: 100%;
-  background-color: #e0e0e0;
-  justify-content: center;
-  overflow: auto;
-  white-space: nowrap;
-}
-
 /*best post 카피*/
 .headCopy {
   position: relative;
@@ -188,4 +180,14 @@
 .statistics.funcOn {
   border-bottom: 5px solid #b5182f;
   border-top: 5px solid #ffffff;
+}
+
+.subPage {
+  display: none;
+  flex: auto;
+  height: 100%;
+  background-color: #e0e0e0;
+  justify-content: center;
+  overflow: auto;
+  white-space: nowrap;
 }

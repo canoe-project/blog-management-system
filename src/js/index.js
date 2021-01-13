@@ -1,9 +1,13 @@
+/*Dom load*/
+$(() => {
+  //   loadHTML().then(() => {});
+});
 /*resource load*/
 
 //script
 import mainScript from "./main.js";
-import "../module/home.js";
-import "../module/newPost.js";
+import homeScript from "./home";
+import newPostScript from "./newPost";
 
 //css
 import "../css/home.css";
@@ -12,6 +16,4 @@ import "../css/list.css";
 import "../css/main.css";
 import "../css/newPost.css";
 
-import "../html/home.html";
-import "../html/list.html";
-import "../html/newPost.html";
+mainScript();

@@ -5,6 +5,7 @@ const webpack = require("webpack");
 const { styles } = require("@ckeditor/ckeditor5-dev-utils");
 
 module.exports = {
+  devtool: "source-map",
   mode: "development",
   entry: {
     index: "./src/js/index.js",

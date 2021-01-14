@@ -1,3 +1,7 @@
+.ck-editor__editable {
+  min-height: 1908px;
+}
+
 .newPostContainer {
   flex: none;
   display: flex;
@@ -130,22 +134,23 @@
   background-repeat: no-repeat;
   background-size: 24px 23px;
   background-position: center;
+  cursor: pointer;
 }
 
 .postSelector {
   position: relative;
   display: flex;
   flex: none;
-  font-size: 30px;
+  font-size: 25px;
   overflow: visible;
   flex-direction: column;
 }
 .postIcon {
-  margin-left: 30px;
+  margin-left: 25px;
   display: flex;
   margin-right: 20px;
   background-repeat: no-repeat;
-  width: 30px;
+  width: 25px;
   height: 100%;
   background-position: center;
 }

@@ -20,12 +20,13 @@ import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
 
 import Base64UploadAdapter from "@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter";
 
-const $template = $(".template");
-const $editorContainer = $(".editorContainer");
-const $editorClose = $(".editorClose");
-const $selectorToggle = $(".selectorToggle");
-const $postSelectorList = $(".postSelectorList");
-const $selectorItem = $(".selectorItem");
+const $template = $(".template"),
+  $editorContainer = $(".editorContainer"),
+  $editorClose = $(".editorClose"),
+  $selectorToggle = $(".selectorToggle"),
+  $postSelectorList = $(".postSelectorList"),
+  $selectorItem = $(".selectorItem"),
+  $save = $(".save");
 
 let editorDoc; //에디터 인스턴스 저장 필드
 
@@ -87,17 +88,28 @@ ClassicEditor.create(document.querySelector("#editor"), {
 /*편집기 열고 닫기*/
 $template.on("click", (e) => {
   $editorContainer.removeClass("off");
-  // console.log($(e.target).attr("id"));
 });
 $editorClose.on("click", () => {
   $editorContainer.toggleClass("off");
 });
 
+/*카테고리 선텍자*/
 $selectorToggle.on("click", () => {
   $postSelectorList.toggleClass("off");
 });
-$selectorItem.on("click", () => {
-  // $(".postSelector").text($(this).text());
-  console.log($(this));
-  $postSelectorList.toggleClass("off");
+
+$save.on("click", () => {
+  console.log(editorDoc.getData());
 });
+
+$.fn.selectItem = function () {
+  $(this).on("click", () => {
+    $(".selectNow").removeClass("selectNow");
+    $(this).addClass("selectNow");
+    $(".selectItem").text($(this).text());
+    $postSelectorList.toggleClass("off");
+  });
+};
+for (var i = 0; i < $selectorItem.length; i++) {
+  $($selectorItem[i]).selectItem();
+}

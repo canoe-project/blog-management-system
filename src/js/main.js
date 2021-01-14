@@ -15,7 +15,6 @@ $.fn.clickMenu = function () {
     funcMenuList.forEach((element) => {
       element.removeClass("funcOn");
     });
-    console.log(select);
     $(`.${select}`).toggleClass("funcOn");
   });
 };

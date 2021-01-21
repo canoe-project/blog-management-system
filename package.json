@@ -8,6 +8,7 @@
     "@ckeditor/ckeditor5-autoformat": "^24.0.0",
     "@ckeditor/ckeditor5-basic-styles": "^24.0.0",
     "@ckeditor/ckeditor5-block-quote": "^24.0.0",
+    "@ckeditor/ckeditor5-code-block": "^24.0.0",
     "@ckeditor/ckeditor5-dev-utils": "^24.0.0",
     "@ckeditor/ckeditor5-easy-image": "^24.0.0",
     "@ckeditor/ckeditor5-editor-classic": "^24.0.0",
@@ -18,6 +19,7 @@
     "@ckeditor/ckeditor5-image": "^24.0.0",
     "@ckeditor/ckeditor5-link": "^24.0.0",
     "@ckeditor/ckeditor5-list": "^24.0.0",
+    "@ckeditor/ckeditor5-media-embed": "^24.0.0",
     "@ckeditor/ckeditor5-paragraph": "^24.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^24.0.0",
     "@ckeditor/ckeditor5-ui": "^24.0.0",
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-alignment": "^24.0.0",
+    "@ckeditor/ckeditor5-inspector": "^2.2.1",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",

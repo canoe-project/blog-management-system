@@ -143,12 +143,14 @@ $selectorToggle.on("click", () => {
 });
 
 $save.on("click", () => {
-  // $.post(`http://${domain}/manager/createPost`, {
-  //   post: {
-  //     category: $(".selectItem").text().toLowerCase(),
-  //   },
-  //   category: $(".selectItem").text().toLowerCase(),
-  // });
+  $.post(`http://${domain}/manager/createPost`, {
+    title: `${$(".editor-title").val()}`,
+    category: $(".selectItem").text().toLowerCase(),
+    contents: editorDoc.getData(),
+    thumbnail: $(".image>img")[0] ? $($(".image>img")[0]).attr("src") : "",
+  }).done((res) => {
+    console.log(res);
+  });
 });
 
 $.fn.selectItem = function () {

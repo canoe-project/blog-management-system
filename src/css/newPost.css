@@ -161,9 +161,10 @@
   background-image: url("../images/newPostEditorImage/pictureIcon.svg");
 }
 .titleBox {
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 3.5rem;
-  padding: calc(2 * var(--ck-spacing-large));
+  padding-left: calc(5 * var(--ck-spacing-large));
+  padding-right: calc(5 * var(--ck-spacing-large));
 }
 .titleBox::after {
   display: block;
@@ -219,7 +220,8 @@
 }
 
 .document-editor__editable-container {
-  padding: calc(2 * var(--ck-spacing-large));
+  padding-left: calc(5 * var(--ck-spacing-large));
+  padding-right: calc(5 * var(--ck-spacing-large));
   background: var(--ck-color-base-foreground);
 
   /* Make it possible to scroll the "page" of the edited content. */
@@ -228,8 +230,7 @@
 
 .document-editor__editable-container .ck-editor__editable {
   /* Set the dimensions of the "page". */
-  width: 15.8cm;
-  min-height: 21cm;
+  width: auto;
 
   /* Keep the "page" off the boundaries of the container. */
   padding: 1cm 2cm 2cm;
